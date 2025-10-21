@@ -114,4 +114,29 @@ Para ler o cartão no meu computador vou usar o meu leitor de cartão. Use um ca
 
 ![Tabela corrigida](/imagens/07-leitor-cartão-cartão.jpeg) 
 
+Se você curte usar o dc3dd (inclusive é uma boa ferramenta para backup do disco original)
+
+Depois de plugar o leitor de cartão com o microsd inserido no computador eu consulto qual é a identificação da unidade com o "lsblk"
+
+```bash
+lsblk
+```
+
+A saída do lsblk será algo como abaixo. No meu caso o microsd é a unidade sdc. Atenção para não efetuar a gravação no disco incorreto 
+e causar uma perda de dados!
+
+![Tela lsblk](/imagens/08-lista-unidades.png) 
+
+Procedo com a gravação da imagem:
+
+```bash
+sudo dc3dd if=ArkOS_K36_v2.0_08112025.img of=/dev/sdc
+```
+
+Se você preferir usar o "dd" ( apesar da menor valocidade )
+
+```bash
+sudo dd if=ArkOS_K36_v2.0_08112025.img of=/dev/sdc status=progress
+```
+
 
