@@ -26,7 +26,7 @@ xz -d ArkOS_K36_v2.0_08112025.img.xz
 
 Ao tentar montar o arquivo você vai notar que ele está vazio (não apresenta as partições - devido ao erro na tabela GPT)
 
-![titulo-imagem](/imagens/02 - visualização-arquivo-imagem-original.png) 
+![Imagem Original Vazia](/imagens/02-visualização-arquivo-imagem-original.png) 
 
 Se você tentar gravá-lo no estado atual não obterá êxito.
 
