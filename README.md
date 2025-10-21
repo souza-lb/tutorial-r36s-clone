@@ -158,3 +158,8 @@ sudo eject /dev/sdc
 
 Remova e insira novamente o leitor de cartão no seu computador
 
+Observe as partições do disco recem gravado:
+
+![Imagem Original Vazia](/imagens/10-partições-disco.png) 
+
+
