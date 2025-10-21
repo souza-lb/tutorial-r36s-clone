@@ -111,6 +111,6 @@ Como eu curto fazer as coisas pelo terminal pela praticidade vamos lá:
 
 Para ler o cartão no meu computador vou usar o meu leitor de cartão. Use um cartão microsd de pelo menos 16GB para a imagem caber.
 
-![Tabela corrigida](/imagens/07-leitor-cartão-cartão.png) 
+![Tabela corrigida](/imagens/07-leitor-cartão-cartão.jpeg) 
 
 
