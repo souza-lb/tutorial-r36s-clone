@@ -231,3 +231,33 @@ Depois:
 ```
 
 Em seguida insira o cartão no seu console e aguarde. No primeiro boot ele irá expandir a partição easyroms para ocupar todo o cartão. Em seguida carregará a insterface do ArkOS.
+
+## ❤️ Apoie o Desenvolvedor
+
+**Dúvidas, sugestões e contribuições?**  
+Leonardo Bruno  
+souzalb@proton.me  
+
+**Gostou do projeto e quer realizar uma contribuição voluntária?**  
+*(Pode ser o valor de uma xícara de café ou chá...) ☕ 🍵*  
+
+Chave PIX:  
+`8dcc7e3c-0c6a-4c6f-a4c0-26a5e62686db`  
+
+Ou utilize o QR Code abaixo:  
+
+<p align="center">
+  <img src="images/qrcode-pix.png" alt="QR Code PIX" width="200">
+</p>
+
+**Você também pode utilizar o PayPal:**  
+
+[![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=EQVW5QQ7GBGSY)
+
+<p align="center">
+  <img src="images/qrcode-paypal.png" alt="QR Code PayPal" width="200">
+</p>
+
+**A utilização deste projeto é livre para alterações e adaptações**  
+*Desde que feita a devida referência ao repositório original e seu criador.*
+
