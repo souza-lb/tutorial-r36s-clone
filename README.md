@@ -41,7 +41,65 @@ Segue a lista de ferramentas que utilizei:
 * mousepad (ou qualquer editor de texto simples de sua preferência)
 * wget ( ou qualquer acelerador de download de sua preferência)
 
+Comecei a inspecionar a imagem usando o fdisk para consultar o seu conteúdo:
+
+Extraia o arquivo com:
+```bash
+sudo fdisk -l ArkOS_K36_v2.0_08112025.img
+```
+
+Você vai receber algo do tipo:
+
+```bash
+Dispositivo                   Início      Fim  Setores Tamanho Tipo
+ArkOS_K36_v2.0_08112025.img1   32768  1056767  1024000    500M Microsoft dados básico
+ArkOS_K36_v2.0_08112025.img2 1056768 17833983 16777216      8G Linux sistema de arquivos
+```
+
+Repare que há duas partições 
+
+![Tabela comrrompida](/imagens/03-inspeção-arquivo-imagem-original.png) 
+
+```bash
+A tabela GPT primária está corrompida...
+```
+
+Vamos corrigir isso usando o "gdisk"
+
+```bash
+sudo gdisk ArkOS_K36_v2.0_08112025.img
+```
+
+Ele vai abrir a tela abaixo:
+
+```bash
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help):
+```
+
+![Uso gdisk](/imagens/04-uso-gdisk.png) 
 
 
+Siga os passo abaixo:
+1 - Menu de recuperação ( pessione a recla "r" e depois enter)
 
-  
+2 - Criar nova tabela de partições (backup) (pressione a tecla "c" e depois ENTER - confirme com Y e depois ENTER)
+
+3 - Escrever alterações ( pressione a tecla "w" e depoist ENTER - confirme com Y e depois ENTER)
+
+Se você seguiu os comandos corretamente receberá uma tela do tipo:
+
+![Saída gdisk](/imagens/05-confirmação-nova-tabela-partição.png) 
+
+Agora tente visualizar (montar a imagem) estou usando o gnome-disk-utility
+
+![Tabela corrigida](/imagens/06-imagem-após-ajuste.png) 
+
+Opa parece que a imagem agora mostra corretamente as partições.
