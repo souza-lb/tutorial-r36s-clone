@@ -162,4 +162,18 @@ Observe as partições do disco recem gravado:
 
 ![Imagem Original Vazia](/imagens/10-partições-disco.png) 
 
+Abra o gerenciador de arquivos de sua preferência e explore o conteúdo:
+
+
+![Imagem Original Vazia](/imagens/11-conteúdo-disco-gravado) 
+
+
+Vamos para a partição "BOOT" fat16 precisamos adicionar o arquivo dtb para o nosso modelo de tela.
+Observe o seu conteúdo abaixo:
+
+![Imagem Original Vazia](/imagens/12-partição-BOOT.png) 
+
+
+
+
 
