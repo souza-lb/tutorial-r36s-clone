@@ -139,4 +139,17 @@ Se você preferir usar o "dd" ( apesar da menor valocidade )
 sudo dd if=ArkOS_K36_v2.0_08112025.img of=/dev/sdc status=progress
 ```
 
+Vamos finalizar com:
+
+```bash
+sudo sync
+```
+
+Depois remova a unidade com:
+
+```bash
+sudo eject /dev/sdc
+```
+
+Remova e insira novamente o leitor de cartão no seu computador
 
