@@ -173,6 +173,11 @@ Observe o seu conteúdo abaixo:
 
 ![Partição boot](/imagens/12-partição-BOOT.png) 
 
+Como eu sou precavido fiz backup da imagem original que veio logo na chegada do console.
+Segue abaixo os arquivos dtb do tipo de tela que meu console utiliza ( tipo 8)
+
+
+
 
 
 
