@@ -176,12 +176,58 @@ Observe o seu conteúdo abaixo:
 Como eu sou precavido e fiz backup da imagem original que veio logo na chegada do console.
 Segue abaixo os arquivos dtb do tipo de tela que meu console utiliza ( tipo 8)
 
-https://github.com/souza-lb/tutorial-r36s-clone/blob/main/arquivos_dtb_originais/rf3536k3ka.dtb
-https://github.com/souza-lb/tutorial-r36s-clone/blob/main/arquivos_dtb_originais/rk3326-evb-lp3-v12-linux.dtb
+rf3536k3ka.dtb
+rk3326-evb-lp3-v12-linux.dtb
+
+https://github.com/souza-lb/tutorial-r36s-clone/tree/main/arquivos_dtb_originais
 
 Vamos copiar esses dois arquivos para a raiz da partição BOOT conforme abaixo
 
 ![dtb na partição boot](/imagens/13-arquivos-dtb-fábrica.png) 
 
+Agora vamos acessar a pasta "extlinux" na mesma partição "BOOT". Precisamos referenciar o arquivo referente ao meu tipo de tela 8.
 
+![arquivo extlinux](/imagens/15-arquivo-extlinux.png) 
 
+Abra o arquivo com o editor de texto de sua preferência
+
+Ele vai apresentar o conteúdo abaixo:
+
+```bash
+LABEL ArkOS
+  LINUX /Image
+  FDT /rf3536k4ka.dtb
+  INITRD /uInitrd
+  APPEND earlyprintk console=ttyFIQ0 rw root=/dev/mmcblk1p2 rootfstype=ext4 loglevel=7 init=/sbin/init rootwait rootdelay=10 fsck.repair=yes fbcon=rotate:0 quiet splash plymouth.ignore-serial-consoles consoleblank=0
+```
+
+Substitua por:
+
+```bash
+LABEL ArkOS
+  LINUX /Image
+  FDT /rf3536k3ka.dtb
+  INITRD /uInitrd
+  APPEND earlyprintk console=ttyFIQ0 rw root=/dev/mmcblk1p2 rootfstype=ext4 loglevel=7 init=/sbin/init rootwait rootdelay=10 fsck.repair=yes fbcon=rotate:0 quiet splash plymouth.ignore-serial-consoles consoleblank=0
+```
+
+Repare que a mudança foi feita na linha para referenciar o arquivo dtb inserido na partição 
+
+```bash
+  FDT /rf3536k3ka.dtb
+```
+
+Salve as mudanças feche o arquivo
+
+Execute :
+
+```bash
+  sudo sync
+```
+
+Depois:
+```bash
+  sudo eject /dev/sdc
+```
+
+Em seguida insira o cartão no seu console e aguarde. No primeiro boot ele irá expandir a partição easyroms para ocupar todo o cartão. Em seguida carregará a insterface do ArkOS.
