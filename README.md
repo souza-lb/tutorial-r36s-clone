@@ -15,12 +15,16 @@ Ao tentar gravar a imagem no cartão sd utilizando um sistema operacional difere
 comportamento levemente diferente ( Incluindo o balena etcher).
 
 Obtenha o arquivo de imagem no repositório do Ark com:
+```bash
 wget https://github.com/AeolusUX/ArkOS-K36/releases/download/ArkOS.K36.08112025/ArkOS_K36_v2.0_08112025.img.xz
+```
 
 Extraia o arquivo com:
+```bash
 xz -d ArkOS_K36_v2.0_08112025.img.xz
+```
 
-Ao tentar montar o arquivo você vai notar que ele está vazio (não apresenta as partições)
+Ao tentar montar o arquivo você vai notar que ele está vazio (não apresenta as partições - devido ao erro na tabela GPT)
 
 ![titulo-imagem](/imagens/02 - visualização-arquivo-imagem-original.png) 
 
