@@ -90,6 +90,7 @@ Command (? for help):
 
 
 Siga os passo abaixo:
+
 1 - Menu de recuperação ( pessione a recla "r" e depois enter)
 
 2 - Criar nova tabela de partições (backup) (pressione a tecla "c" e depois ENTER - confirme com Y e depois ENTER)
