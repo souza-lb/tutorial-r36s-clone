@@ -1,7 +1,5 @@
 # Tutorial de Instalação do ArkOS no R36S Clone
 
-![Banner](imagens/banner.png)
-
 ## 📋 Introdução
 
 Este tutorial foi desenvolvido para usuários Linux que estão enfrentando problemas na gravação da imagem **ArkOS_K36_v2.0_08112025.img.xz** em consoles R36S Clone. Alguns usuários relataram que a imagem aparece "vazia" sem partições visíveis - problema que também enfrentei pessoalmente.
