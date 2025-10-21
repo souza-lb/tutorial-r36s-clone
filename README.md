@@ -103,7 +103,7 @@ Se você seguiu os comandos corretamente receberá uma tela do tipo:
 
 Agora tente visualizar (montar a imagem) estou usando o gnome-disk-utility
 
-![Tabela corrigida](/imagens/06-imagem-após-ajuste.png) 
+![Imagem após correção](/imagens/06-imagem-após-ajuste.png) 
 
 Opa parece que a imagem agora mostra corretamente as partições.
 
@@ -112,7 +112,7 @@ Como eu curto fazer as coisas pelo terminal pela praticidade vamos lá:
 
 Para ler o cartão no meu computador vou usar o meu leitor de cartão. Use um cartão microsd de pelo menos 16GB para a imagem caber.
 
-![Tabela corrigida](/imagens/07-leitor-cartão-cartão.jpeg) 
+![Leitor de cartão microsd](/imagens/07-leitor-cartão-cartão.jpeg) 
 
 Se você curte usar o dc3dd (inclusive é uma boa ferramenta para backup do disco original)
 
@@ -135,7 +135,7 @@ sudo dc3dd if=ArkOS_K36_v2.0_08112025.img of=/dev/sdc
 
 Saída esperada dc3dd:
 
-![Imagem Original Vazia](/imagens/09-saída-esperada-dc3dd.png) 
+![Gravação de imagem com dc3dd](/imagens/09-saída-esperada-dc3dd.png) 
 
 
 Se você preferir usar o "dd" ( apesar da menor valocidade )
@@ -160,18 +160,18 @@ Remova e insira novamente o leitor de cartão no seu computador
 
 Observe as partições do disco recem gravado:
 
-![Imagem Original Vazia](/imagens/10-partições-disco.png) 
+![Partições disco](/imagens/10-partições-disco.png) 
 
 Abra o gerenciador de arquivos de sua preferência e explore o conteúdo:
 
 
-![Imagem Original Vazia](/imagens/11-conteúdo-disco-gravado) 
+![Conteúdo disco](/imagens/11-conteúdo-disco-gravado) 
 
 
 Vamos para a partição "BOOT" fat16 precisamos adicionar o arquivo dtb para o nosso modelo de tela.
 Observe o seu conteúdo abaixo:
 
-![Imagem Original Vazia](/imagens/12-partição-BOOT.png) 
+![Partição boot](/imagens/12-partição-BOOT.png) 
 
 
 
