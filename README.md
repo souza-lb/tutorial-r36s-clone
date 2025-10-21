@@ -173,12 +173,15 @@ Observe o seu conteúdo abaixo:
 
 ![Partição boot](/imagens/12-partição-BOOT.png) 
 
-Como eu sou precavido fiz backup da imagem original que veio logo na chegada do console.
+Como eu sou precavido e fiz backup da imagem original que veio logo na chegada do console.
 Segue abaixo os arquivos dtb do tipo de tela que meu console utiliza ( tipo 8)
 
+https://github.com/souza-lb/tutorial-r36s-clone/blob/main/arquivos_dtb_originais/rf3536k3ka.dtb
+https://github.com/souza-lb/tutorial-r36s-clone/blob/main/arquivos_dtb_originais/rk3326-evb-lp3-v12-linux.dtb
 
+Vamos copiar esses dois arquivos para a raiz da partição BOOT conforme abaixo
 
-
+![dtb na partição boot](/imagens/13-arquivos-dtb-fábrica.png) 
 
 
 
