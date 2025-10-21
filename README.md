@@ -238,7 +238,7 @@ Em seguida insira o cartão no seu console e aguarde. No primeiro boot ele irá 
 Leonardo Bruno  
 souzalb@proton.me  
 
-**Gostou do projeto e quer realizar uma contribuição voluntária?**  
+**Gostou do tutorial e quer realizar uma contribuição voluntária?**  
 *(Pode ser o valor de uma xícara de café ou chá...) ☕ 🍵*  
 
 Chave PIX:  
@@ -247,7 +247,7 @@ Chave PIX:
 Ou utilize o QR Code abaixo:  
 
 <p align="center">
-  <img src="images/qrcode-pix.png" alt="QR Code PIX" width="200">
+  <img src="imagens/qrcode-pix.png" alt="QR Code PIX" width="200">
 </p>
 
 **Você também pode utilizar o PayPal:**  
@@ -255,7 +255,7 @@ Ou utilize o QR Code abaixo:
 [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=EQVW5QQ7GBGSY)
 
 <p align="center">
-  <img src="images/qrcode-paypal.png" alt="QR Code PayPal" width="200">
+  <img src="imagens/qrcode-paypal.png" alt="QR Code PayPal" width="200">
 </p>
 
 **A utilização deste projeto é livre para alterações e adaptações**  
