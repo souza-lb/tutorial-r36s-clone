@@ -60,6 +60,8 @@ Repare que há duas partições
 
 ![Tabela comrrompida](/imagens/03-inspeção-arquivo-imagem-original.png) 
 
+Atenção também no trecho no topo da tela.
+
 ```bash
 A tabela GPT primária está corrompida...
 ```
@@ -103,3 +105,12 @@ Agora tente visualizar (montar a imagem) estou usando o gnome-disk-utility
 ![Tabela corrigida](/imagens/06-imagem-após-ajuste.png) 
 
 Opa parece que a imagem agora mostra corretamente as partições.
+
+Agora vamos proceder com a gravação da imagem no cartão microsd. Fica ao seu critério utilizar um programa gráfico ou não.
+Como eu curto fazer as coisas pelo terminal pela praticidade vamos lá:
+
+Para ler o cartão no meu computador vou usar o meu leitor de cartão. Use um cartão microsd de pelo menos 16GB para a imagem caber.
+
+![Tabela corrigida](/imagens/07-leitor-cartão-cartão.png) 
+
+
