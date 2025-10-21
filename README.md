@@ -133,6 +133,11 @@ Procedo com a gravação da imagem:
 sudo dc3dd if=ArkOS_K36_v2.0_08112025.img of=/dev/sdc
 ```
 
+Saída esperada dc3dd:
+
+![Imagem Original Vazia](/imagens/09-saída-esperada-dc3dd.png) 
+
+
 Se você preferir usar o "dd" ( apesar da menor valocidade )
 
 ```bash
